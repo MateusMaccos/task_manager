@@ -24,10 +24,10 @@ Este projeto é um gerenciador de tarefas desenvolvido em Django. Ele permite qu
 
 ```bash
 # No terminal, execute o seguinte comando:
-git clone https://github.com/SEU_USUARIO/gerenciador-tarefas.git
+git clone https://github.com/SEU_USUARIO/task_manager.git
 
 # Acesse a pasta do projeto
-cd gerenciador-tarefas
+cd task_manager
 ```
 
 ### 2️⃣ Criar e ativar um ambiente virtual
