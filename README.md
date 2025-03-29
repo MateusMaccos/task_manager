@@ -24,10 +24,10 @@ Este projeto é um gerenciador de tarefas desenvolvido em Django. Ele permite qu
 
 ```bash
 # No terminal, execute o seguinte comando:
-git clone https://github.com/SEU_USUARIO/gerenciador-tarefas.git
+git clone https://github.com/SEU_USUARIO/task_manager.git
 
 # Acesse a pasta do projeto
-cd gerenciador-tarefas
+cd task_manager
 ```
 
 ### 2️⃣ Criar e ativar um ambiente virtual
@@ -74,9 +74,9 @@ O projeto estará rodando em: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ## 🛠 Testando a Aplicação
 
-1. Acesse o painel administrativo: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-2. Faça login com o superusuário criado.
-3. Teste a criação, edição e exclusão de tarefas.
+1. Acesse a aplicação: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+2. Faça login com o superusuário criado ou cadastre um usuário novo.
+3. Teste a criação, edição, exclusão e busca de tarefas.
 
 Caso precise de mais informações, sinta-se à vontade para contribuir ou abrir uma issue no repositório!
 
