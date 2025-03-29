@@ -90,19 +90,27 @@ Caso precise de mais informações, sinta-se à vontade para contribuir ou abrir
 ---
 
 ## 🛠 Imagens
+
 ### Login
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/login.png">
-##Cadastro
+
+### Cadastro
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/cadastro.png">
+
 ### Lista de Tasks Vazia
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/tasksVazia.png">
+
 ### Nova Task
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/novaTarefa.png">
+
 ### Tasks Criadas
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/tasksCriada.png">
+
 ### Task Concluída
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/taskConcluida.png">
+
 ### Excluir Task
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/excluirTasks.png">
 <img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/excluirTasks.png">
 
 
