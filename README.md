@@ -81,3 +81,22 @@ O projeto estará rodando em: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 Caso precise de mais informações, sinta-se à vontade para contribuir ou abrir uma issue no repositório!
 
 ---
+
+## 🛠 Imagens
+##Login
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/login.png">
+##Cadastro
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/cadastro.png">
+##Lista de Tasks Vazia
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/tasksVazia.png">
+##Nova Task
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/novaTarefa.png">
+##Tasks Criadas
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/tasksCriada.png">
+##Task Concluída
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/taskConcluida.png">
+##Excluir Task
+<img align="center" src="https://github.com/MateusMaccos/task_manager/blob/main/assets/excluirTasks.png">
+
+
+---
