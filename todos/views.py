@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.shortcuts import get_object_or_404,redirect
 from datetime import date
 from django.contrib.auth.mixins import LoginRequiredMixin
-
+from django.contrib import messages
 
 class TodoListView(LoginRequiredMixin, ListView):
     model = Todo
@@ -30,6 +30,7 @@ class TodoCreateView(LoginRequiredMixin,CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, "Tarefa criada com sucesso!")
         return super(TodoCreateView, self).form_valid(form)
 
 class TodoUpdateView(LoginRequiredMixin,UpdateView):
@@ -37,12 +38,19 @@ class TodoUpdateView(LoginRequiredMixin,UpdateView):
     fields = ["title", "description","deadline"]
     success_url = reverse_lazy("todo_list")
 
+    def form_valid(self, form):
+        messages.success(self.request, "Tarefa editada com sucesso!")
+        return super().form_valid(form)
+
     def get_queryset(self):
         return Todo.objects.filter(user=self.request.user)
 
 class TodoDeleteView(LoginRequiredMixin,DeleteView):
     model = Todo
     success_url = reverse_lazy("todo_list")
+    def form_valid(self, form):
+        messages.success(self.request, "Tarefa excluída com sucesso!")
+        return super().form_valid(form)
 
     def get_queryset(self):
         return Todo.objects.filter(user=self.request.user)
