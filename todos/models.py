@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Todo(models.Model):
     STATUS_CHOICES = [
         ("Pendente", "Pendente"),
-        ("Concluído", "Concluído"),
+        ("Concluido", "Concluido"),
     ]
     title = models.CharField(
         verbose_name="Título", max_length=100, null=False, blank=False

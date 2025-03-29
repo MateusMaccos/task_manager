@@ -10,7 +10,17 @@ class TodoListView(LoginRequiredMixin, ListView):
     model = Todo
 
     def get_queryset(self):
-        return Todo.objects.filter(user=self.request.user)
+        queryset = Todo.objects.filter(user=self.request.user)
+
+        search_title = self.request.GET.get("search_title", "")
+        if search_title:
+            queryset = queryset.filter(title__icontains=search_title)
+
+        search_status = self.request.GET.get("search_status", "")
+        if search_status:
+            queryset = queryset.filter(status=search_status)
+
+        return queryset
 
 
 class TodoCreateView(LoginRequiredMixin,CreateView):

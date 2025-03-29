@@ -5,6 +5,19 @@ Lista de Tarefas
 
 {% block content %}
 <h1>Lista de Tarefas - {{ user.username }} - ({{todo_list|length}})</h1>
+
+<form method="GET" class="mb-4">
+  <div class="input-group">
+    <input type="text" class="form-control" name="search_title" placeholder="Buscar por título" value="{{ request.GET.search_title }}">
+    <select name="search_status" class="form-select">
+      <option value="">Todos os status</option>
+      <option value="Pendente" {% if request.GET.search_status == "Pendente" %}selected{% endif %}>Pendente</option>
+      <option value="Concluido" {% if request.GET.search_status == "Concluido" %}selected{% endif %}>Concluído</option>
+    </select>
+    <button class="btn btn-primary" type="submit">Buscar</button>
+  </div>
+</form>
+
 {% if todo_list %}
 <table class="table">
   <thead>
