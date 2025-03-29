@@ -1,16 +1,75 @@
-# Projeto Django de Tarefas
+# Projeto Django - Gerenciador de Tarefas
 
-Este é um projeto Django para gerenciamento de tarefas. Ele permite que você crie, edite, exclua e visualize tarefas. Também inclui autenticação de usuários e a capacidade de marcar tarefas como concluídas.
+Este projeto é um gerenciador de tarefas desenvolvido em Django. Ele permite que os usuários façam login, criem, editem e excluam tarefas, além de marcar tarefas como concluídas.
 
-## Requisitos
+## 🚀 Tecnologias Utilizadas
+- Python 3.10+
+- Django 5.1+
+- SQLite (banco de dados padrão)
+- Bootstrap 5 (para estilização)
 
-Certifique-se de ter o Python e o Django instalados. Este projeto foi feito com o Python 3.8+ e Django 3.2+. Para instalar os requisitos, você pode usar o arquivo `requirements.txt`.
+---
 
-### Como instalar
+## 📥 Clonando e Configurando o Projeto
 
-1. Clone o repositório:
+### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/SEU_USUARIO/meu_projeto_django.git
-cd meu_projeto_django
+# No terminal, execute o seguinte comando:
+git clone https://github.com/SEU_USUARIO/gerenciador-tarefas.git
 
+# Acesse a pasta do projeto
+cd gerenciador-tarefas
+```
+
+### 2️⃣ Criar e ativar um ambiente virtual
+
+```bash
+# Criar o ambiente virtual
+python -m venv venv
+
+# Ativar o ambiente virtual
+# No Windows:
+venv\Scripts\activate
+
+# No macOS/Linux:
+source venv/bin/activate
+```
+
+### 3️⃣ Instalar as dependências do projeto
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Aplicar as migrações do banco de dados
+
+```bash
+python manage.py migrate
+```
+
+### 5️⃣ Criar um superusuário
+
+```bash
+python manage.py createsuperuser
+```
+Digite um nome de usuário, e-mail e senha para acessar o painel administrativo.
+
+### 6️⃣ Iniciar o servidor local
+
+```bash
+python manage.py runserver
+```
+O projeto estará rodando em: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 🛠 Testando a Aplicação
+
+1. Acesse o painel administrativo: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+2. Faça login com o superusuário criado.
+3. Teste a criação, edição e exclusão de tarefas.
+
+Caso precise de mais informações, sinta-se à vontade para contribuir ou abrir uma issue no repositório!
+
+---
