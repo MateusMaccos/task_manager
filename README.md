@@ -10,6 +10,14 @@ Este projeto é um gerenciador de tarefas desenvolvido em Django. Ele permite qu
 
 ---
 
+## Funcionalidades
+- CRUD de Tarefas
+- Login, Cadastro e Logout de Usuários
+- Tarefas filtradas por título e status
+- Tarefas únicas dos usuários
+
+---
+
 ## 📥 Clonando e Configurando o Projeto
 
 ### 1️⃣ Clonar o repositório
