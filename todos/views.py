@@ -25,7 +25,7 @@ class TodoListView(LoginRequiredMixin, ListView):
 
 class TodoCreateView(LoginRequiredMixin,CreateView):
     model = Todo
-    fields = ["title", "deadline"]
+    fields = ["title","description", "deadline"]
     success_url = reverse_lazy("todo_list")
 
     def form_valid(self, form):
@@ -34,7 +34,7 @@ class TodoCreateView(LoginRequiredMixin,CreateView):
 
 class TodoUpdateView(LoginRequiredMixin,UpdateView):
     model = Todo
-    fields = ["title", "deadline"]
+    fields = ["title", "description","deadline"]
     success_url = reverse_lazy("todo_list")
 
     def get_queryset(self):

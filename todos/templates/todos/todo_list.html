@@ -24,6 +24,7 @@ Lista de Tarefas
     <tr>
       <th scope="col">#</th>
       <th scope="col">Título</th>
+      <th scope="col">Descrição</th>
       <th scope="col">Criado em</th>
       <th scope="col">Data de entrega</th>
       <th scope="col">Finalizado em</th>
@@ -35,6 +36,7 @@ Lista de Tarefas
     <tr>
       <th scope="row">{{todo.pk}}</th>
       <td>{{todo.title}}</td>
+      <td>{{todo.description|default:"-"}}</td>
       <td>{{todo.created_at}}</td>
       <td>{{todo.deadline}}</td>
       <td>{{todo.finished_at|default:"-"}}</td>
