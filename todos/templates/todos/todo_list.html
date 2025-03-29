@@ -4,7 +4,7 @@ Lista de Tarefas
 {% endblock page_title %} 
 
 {% block content %}
-<h1>Lista de Tarefas</h1>
+<h1>Lista de Tarefas - {{ user.username }} - ({{todo_list|length}})</h1>
 {% if todo_list %}
 <table class="table">
   <thead>
@@ -26,11 +26,17 @@ Lista de Tarefas
       <td>{{todo.deadline}}</td>
       <td>{{todo.finished_at|default:"-"}}</td>
       <td>
-        {% if not todo.finished_at %}
-          <a href="{% url 'todo_complete' pk=todo.pk %}" class="btn btn-primary btn-sm">Concluir</a>
-          <a href="{% url 'todo_update' pk=todo.pk %}" class="btn btn-secondary btn-sm">Editar</a>
+        {% if todo.status == "Pendente" %}
+          <a href="{% url 'todo_complete' pk=todo.pk %}" class="btn btn-success btn-sm" title="Concluir">
+            <i class="fa-solid fa-check"></i>
+          </a>
+          <a href="{% url 'todo_update' pk=todo.pk %}" class="btn btn-warning btn-sm" title="Editar">
+            <i class="fa-solid fa-pen"></i>
+          </a>
         {% endif %}
-        <a href="{% url 'todo_delete' pk=todo.pk %}" class="btn btn-danger btn-sm">Excluir</a>
+        <a href="{% url 'todo_delete' pk=todo.pk %}" class="btn btn-danger btn-sm" title="Excluir">
+          <i class="fa-solid fa-trash"></i>
+        </a>
       </td>
     </tr>
     {% endfor %}
